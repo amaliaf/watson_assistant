@@ -1,0 +1,1105 @@
+{
+  "intents": [
+    {
+      "intent": "positive",
+      "examples": [
+        {
+          "text": "I like seafood"
+        },
+        {
+          "text": "I would like some traditional food"
+        },
+        {
+          "text": "I love fastfood"
+        },
+        {
+          "text": "I want Chinese food"
+        },
+        {
+          "text": "I would like some Mexican food"
+        },
+        {
+          "text": "I want something sweet"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "negative",
+      "examples": [
+        {
+          "text": "I don't like cakes with fruits"
+        },
+        {
+          "text": "I hate fastfood"
+        },
+        {
+          "text": "I don't want traditional food"
+        },
+        {
+          "text": "I don't like Chinese food"
+        },
+        {
+          "text": "I hate seafood"
+        },
+        {
+          "text": "I don't like dark chocolate"
+        },
+        {
+          "text": "I dislike Mexican food"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greeting",
+      "examples": [
+        {
+          "text": "Hello!"
+        },
+        {
+          "text": "Hi!"
+        },
+        {
+          "text": "Good morning!"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "food",
+      "examples": [
+        {
+          "text": "I am hungry"
+        },
+        {
+          "text": "I want to eat something"
+        },
+        {
+          "text": "Where should I go eat?"
+        },
+        {
+          "text": "What should I eat?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "attribute",
+      "examples": [
+        {
+          "text": "chinese"
+        },
+        {
+          "text": "fastfood"
+        },
+        {
+          "text": "mexican"
+        },
+        {
+          "text": "traditional"
+        },
+        {
+          "text": "spicy"
+        },
+        {
+          "text": "sweet"
+        },
+        {
+          "text": "vegan"
+        },
+        {
+          "text": "not spicy"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "restaurants",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "TacoBell",
+          "synonyms": [
+            "El Torito"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "McDonalds",
+          "synonyms": [
+            "kfc",
+            "oro toro",
+            "mc",
+            "mcdonalds"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "dominos",
+          "synonyms": [
+            "pizza hut"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "chopstix",
+          "synonyms": [
+            "wu xing"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "la mama",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "rawdia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "alice",
+          "synonyms": [
+            "Alice"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "food",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "taco",
+          "synonyms": [
+            "tacos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "burrito",
+          "synonyms": [
+            "burritos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "pizza",
+          "synonyms": [
+            "calzone"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "pastry",
+          "synonyms": [
+            "pastries",
+            "strudel",
+            "strudels",
+            "croissants",
+            "crepes",
+            "pancakes",
+            "croissant",
+            "éclairs",
+            "eclairs"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "dumpling",
+          "synonyms": [
+            "dumplings"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "cake",
+          "synonyms": [
+            "cakes",
+            "cheesecake",
+            "cookie",
+            "pie",
+            "pudding",
+            "biscuit",
+            "cupcakes",
+            "dessert"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "soup",
+          "synonyms": [
+            "broth",
+            "ramen"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "pasta",
+          "synonyms": [
+            "macaroni",
+            "lasagna",
+            "linguine",
+            "ravioli",
+            "tortellini",
+            "penne"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sandwich",
+          "synonyms": [
+            "sandwhich",
+            "burgers",
+            "panini"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "potatoes",
+          "synonyms": [
+            "fries",
+            "mashed potatoes",
+            "french fries"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "salad",
+          "synonyms": [
+            "coleslaw",
+            "lettuce",
+            "veggies",
+            "vegetables",
+            "cabbage",
+            "broccoli",
+            "spinach",
+            "romaine"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "noodles",
+          "synonyms": [
+            "ramen"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Order a BigMac from McDonald's",
+            "Order a sandwich from KFC",
+            "They have the best burgers at OroToro",
+            "You can order burgers at PizzaHut"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1589265206000",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:sandwich",
+      "dialog_node": "response_2_1589280834716",
+      "previous_sibling": "response_5_1589280763414"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Order some fries.",
+            "Order a burger.",
+            "Get a sandwich.",
+            "Order a salad."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1589265206000",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@restaurants:McDonalds",
+      "dialog_node": "response_5_1589282199842",
+      "previous_sibling": "response_9_1589282066971"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Get some noodles.",
+            "Order dumplings."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1589265206000",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Anything else"
+      },
+      "conditions": "@restaurants:chopstix",
+      "dialog_node": "response_3_1589282339912",
+      "previous_sibling": "response_7_1589282261083"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "You should get \"ciorba de vacuta\" from \"La mama\"",
+            "You should get a ramen soup from \"Wu Xing\"",
+            ""
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1589265206000",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:soup",
+      "dialog_node": "response_5_1589280509893",
+      "previous_sibling": "response_7_1589265326617"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Order a pizza.",
+            "Did you know you can order pasta from this place?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1589265206000",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@restaurants:dominos",
+      "dialog_node": "response_7_1589282261083",
+      "previous_sibling": "response_5_1589282199842"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Order from TacoBell.",
+            "Order from ElTorrito."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1589265206000",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:taco || @food:burrito",
+      "dialog_node": "response_2_1589281245868",
+      "previous_sibling": "response_1_1589281131748"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Order something from Cofetaria Alice."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1589265206000",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:cake || @food:pastry",
+      "dialog_node": "response_1_1589281351704",
+      "previous_sibling": "response_2_1589281245868"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "You can order a salad at McDonald's",
+            "You can order a salad at KFC",
+            "You can order a salad at PizzaHut",
+            "You can order a salad at La mama"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1589265206000",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:salad",
+      "dialog_node": "response_5_1589281049024",
+      "previous_sibling": "response_2_1589280947913"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "You should order tacos.",
+            "You can order a burrito."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1589265206000",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@restaurants:TacoBell",
+      "dialog_node": "response_9_1589282066971",
+      "previous_sibling": "response_1_1589281351704"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Did you know that now you can order pasta at PizzaHut?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1589265206000",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:pasta",
+      "dialog_node": "response_5_1589280763414",
+      "previous_sibling": "response_5_1589280509893"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Order a soup.",
+            "Get some mashed potatoes or fries."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1589265206000",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@restaurants:(la mama)",
+      "dialog_node": "response_10_1589282396987",
+      "previous_sibling": "response_3_1589282339912"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Get some fries from McDonald's.",
+            "You can get mashed potatoes or fries at La mama."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1589265206000",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:potatoes",
+      "dialog_node": "response_2_1589280947913",
+      "previous_sibling": "response_2_1589280834716"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Go get some food from ChopStix",
+            "Go get some food from WuXing"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1589265206000",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:noodles || @food:dumpling",
+      "dialog_node": "response_1_1589281131748",
+      "previous_sibling": "response_5_1589281049024"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Get some pastry.",
+            "Order a cake."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_3_1589265206000",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@restaurants:alice",
+      "dialog_node": "response_9_1589282456270",
+      "previous_sibling": "response_10_1589282396987"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You should get a pizza from Dominos."
+              },
+              {
+                "text": "You should get a pizza from Pizza Hut."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_3_1589265206000",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:pizza",
+      "dialog_node": "response_7_1589265326617"
+    },
+    {
+      "type": "standard",
+      "title": "Food dislikes",
+      "output": {},
+      "parent": "node_4_1589234036083",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#negative",
+      "dialog_node": "node_1_1589283105156",
+      "previous_sibling": "node_3_1589265206000"
+    },
+    {
+      "type": "standard",
+      "title": "Food interest",
+      "parent": "node_4_1589234036083",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#positive",
+      "dialog_node": "node_3_1589265206000"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Get a burger from McDonald's.",
+            "You can get a soup at La mama."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1589283105156",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:potatoes",
+      "dialog_node": "response_6_1589283105168",
+      "previous_sibling": "response_5_1589283105168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Order a salad from McDonald's",
+            "Order a salad from KFC",
+            "You can order a pizza at PizzaHut"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1589283105156",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:sandwich",
+      "dialog_node": "response_5_1589283105168",
+      "previous_sibling": "response_4_1589283105168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Order a burger from McDonald's.",
+            "Eat a salad from La mama."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1589283105156",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@restaurants:dominos",
+      "dialog_node": "response_13_1589283105168",
+      "previous_sibling": "response_12_1589283105168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Don't go to Cofetaria Alice."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1589283105156",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:cake || @food:pastry",
+      "dialog_node": "response_10_1589283105168",
+      "previous_sibling": "response_9_1589283105168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "You can order a delicious desert from PizzaHut. ",
+            "Get an apple pie from McDonald's."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1589283105156",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@restaurants:alice",
+      "dialog_node": "response_16_1589283105168",
+      "previous_sibling": "response_15_1589283105168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Order mashed potatoes from La mama.",
+            "You should get a noodles from \"Wu Xing\"",
+            ""
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1589283105156",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:soup",
+      "dialog_node": "response_3_1589283105168",
+      "previous_sibling": "response_2_1589283105168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Order some fries at La mama.",
+            "Order a burger at PizzaHut.",
+            "Order tacos from ElTorito."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1589283105156",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@restaurants:McDonalds",
+      "dialog_node": "response_12_1589283105168",
+      "previous_sibling": "response_11_1589283105168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "You should eat a pizza at PizzaHut.",
+            "You can order a burger at OroToro."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1589283105156",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@restaurants:TacoBell",
+      "dialog_node": "response_11_1589283105168",
+      "previous_sibling": "response_10_1589283105168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Don't go to TacoBell. Order a salad from McDonald's.",
+            "Don't go to ElTorito. Order pasta from PizzaHut."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1589283105156",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:taco || @food:burrito",
+      "dialog_node": "response_9_1589283105168",
+      "previous_sibling": "response_8_1589283105168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Order a pizza from PizzaHut.",
+            "Order a burger from OroToro."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1589283105156",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:pasta",
+      "dialog_node": "response_4_1589283105168",
+      "previous_sibling": "response_3_1589283105168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Get a burrito from TacoBell.",
+            "Order fries at McDonald's."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1589283105156",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Anything else"
+      },
+      "conditions": "@restaurants:chopstix",
+      "dialog_node": "response_14_1589283105168",
+      "previous_sibling": "response_13_1589283105168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Order ramen from WuXing.",
+            "Get some fries from McDonald's."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1589283105156",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@restaurants:(la mama)",
+      "dialog_node": "response_15_1589283105168",
+      "previous_sibling": "response_14_1589283105168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "You can order a burger at McDonald's",
+            "You can order some fries at KFC",
+            "You can order pasta at PizzaHut",
+            "You can order a soup at La mama"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1589283105156",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:salad",
+      "dialog_node": "response_7_1589283105168",
+      "previous_sibling": "response_6_1589283105168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Don't go to Chopstix. Order a pizza from PizzaHut.",
+            "Don't go to WuXing. Order a burger from OroToro."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_1_1589283105156",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:noodles || @food:dumpling",
+      "dialog_node": "response_8_1589283105168",
+      "previous_sibling": "response_7_1589283105168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You shouldn't eat at Dominos."
+              },
+              {
+                "text": "You can still go to PizzaHut and order something else"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1589283105156",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1589282618469"
+      },
+      "conditions": "@food:pizza",
+      "dialog_node": "response_2_1589283105168"
+    },
+    {
+      "type": "standard",
+      "title": "Help",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Can I help you with anything else?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "true",
+      "dialog_node": "node_5_1589282618469",
+      "previous_sibling": "node_4_1589234036083"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_5_1589282618469",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Food",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Can you give me more details?"
+              },
+              {
+                "text": "What would you like?"
+              },
+              {
+                "text": "Tell me more, please!"
+              },
+              {
+                "text": "What don't you like?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#food",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_4_1589234036083",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              },
+              {
+                "text": "Hello! What can I do for you today?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#greeting",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}
